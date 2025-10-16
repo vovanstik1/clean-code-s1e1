@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ margin: 0 auto;
 display: block;
 text-align: right;
 }
-.header img {
+.header-img {
 width: 100%;
 }
 .header .more-info {
@@ -21,7 +21,7 @@ font-family: fantasy, cursive;
   .header { text-align: center;
 }
 }
-.centered-main-page-element {
+.hero {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -31,7 +31,7 @@ font-family: fantasy, cursive;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.task-wrapper {
   display: flex;
 }
 ul {

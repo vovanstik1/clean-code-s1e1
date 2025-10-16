@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
+
 <body class="page">
   <header class="header">
     <img src="./eisenhower-matrix.jpg" class="header-img" alt="matrix-eisenhower">
-    <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="header__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="hero">
-    <div id="hero-top">
-      <label class="new-task-hero" for="new-task">Add Item</label>
-      <div class="task-wrapper">
-        <input id="new-task" class="task-input" type="text">
+    <div id="hero__hero-top">
+      <label class="new-task-hero hero__hero-top_input" for="new-task">Add Item</label>
+      <div class="task-wrapper hero__hero-top_task-wrapper">
+        <input id="new-task" class="task-input hero__hero-top_task-wrapper_task-input" type="text">
         <button class="btn-add btn">Add</button>
       </div>
     </div>
-    <h1 class="section-title">Todo</h1>
-    <ul id="incomplete-tasks" class="task-list">
-      <li class="task-item">
-        <input type="checkbox" class="task-check">
-        <label class="task">Pay Bills</label>
-        <input type="text" class="task-input">
-        <button class="edit btn">Edit</button>
-        <button class="delete btn">
-          <img src="./remove.svg" class="delete-img" alt="delete-img">
+    <h1 class="section-title hero_title">Todo</h1>
+    <ul id="incomplete-tasks" class="task-list hero__incomplete-tasks">
+      <li class="task-item hero__incomplete-tasks_task-item">
+        <input type="checkbox" class="task-check hero__incomplete-tasks_task-item_checkbox">
+        <label class="task hero__incomplete-tasks_task-item_label">Pay Bills</label>
+        <input type="text" class="task-input hero__incomplete-tasks_task-input">
+        <button class="edit btn hero__incomplete-tasks_btn">Edit</button>
+        <button class="delete btn hero__incomplete-tasks_btn">
+          <img src="./remove.svg" class="delete-img hero__incomplete-tasks_delete-img" alt="delete-img">
         </button>
       </li>
-      <li class="task-item edit-mode">
-        <input type="checkbox" class="task-check">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task-input">
-        <button class="edit btn">Save</button>
-        <button class="delete btn">
-          <img src="./remove.svg" class="delete-img" alt="delete-img">
+      <li class="task-item edit-mode hero__incomplete-tasks__edit-mode">
+        <input type="checkbox" class="task-check hero__incomplete-tasks__edit-mode_checkbox">
+        <label class="task hero__incomplete-tasks__edit-mode_task">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="task-input hero__incomplete-tasks__edit-mode_task-input">
+        <button class="edit btn hero__incomplete-tasks__edit-mode_btn">Save</button>
+        <button class="delete btn hero__incomplete-tasks__edit-mode_btn">
+          <img src="./remove.svg" class="delete-img hero__incomplete-tasks__edit-mode_delete-img" alt="delete-img">
         </button>
       </li>
     </ul>
-    <h2 class="section-title">Completed</h2>
-    <ul id="completed-tasks" class="task-list">
-      <li class="task-item">
-        <input type="checkbox" checked class="task-check">
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task-input">
-        <button class="edit btn">Edit</button>
-        <button class="delete btn">
-          <img src="./remove.svg" class="delete-img" alt="delete-img">
+    <h2 class="section-title hero_title">Completed</h2>
+    <ul id="completed-tasks" class="task-list hero__completed-tasks">
+      <li class="task-item hero__completed-tasks__task-item">
+        <input type="checkbox" checked class="task-check hero__completed-tasks__task-item_checkbox">
+        <label class="task hero__completed-tasks__task-item_task">See the Doctor</label>
+        <input type="text" class="task-input hero__completed-tasks__task-item_task-input">
+        <button class="edit btn hero__completed-tasks__task-item_btn">Edit</button>
+        <button class="delete btn hero__completed-tasks__task-item_btn">
+          <img src="./remove.svg" class="delete-img hero__completed-tasks__task-item_img" alt="delete-img">
         </button>
       </li>
     </ul>
   </main>
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
